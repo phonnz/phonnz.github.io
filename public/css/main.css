@@ -13,6 +13,7 @@ textarea {
 body {
     font-size: 1em;
     line-height: 1.4;
+    background-color: #efefef;
 }
 
 ::-moz-selection {
@@ -32,6 +33,16 @@ hr {
     border-top: 1px solid #ccc;
     margin: 1em 0;
     padding: 0;
+}
+a { 
+    color: #22bce0; 
+    text-decoration: none;
+}
+a:hover { 
+    text-decoration: underline;
+}
+a:visited { 
+    color: #dd4f24; 
 }
 
 img {
@@ -74,22 +85,23 @@ body {
    =================== */
 
 .header-container {
-    border-bottom: 20px solid #e44d26;
+    border-bottom: 20px solid Black;
 }
 
 .footer-container,
 .main aside {
-    border-top: 20px solid #e44d26;
+    border-top: 20px solid Black;
 }
 
 .header-container,
 .footer-container,
 .main aside {
-    background: #f16529;
+    background: #444;
 }
 
 .title {
-    color: white;
+    font-size: 4em;
+    color: #dd4f24;
 }
 
 /* ==============
@@ -111,7 +123,9 @@ nav a {
     font-weight: bold;
 
     color: white;
-    background: #e44d26;
+    background: #22bce0;
+
+    border-radius: 35px;
 }
 
 nav a:hover,
@@ -183,7 +197,7 @@ nav a:hover {
 
     nav a {
         float: left;
-        width: 27%;
+        width: 17%;
         margin: 0 1.7%;
         padding: 25px 2%;
         margin-bottom: 0;
@@ -233,7 +247,7 @@ nav a:hover {
 
     nav {
         float: right;
-        width: 38%;
+        width: 58%;
     }
 
 /* ============
