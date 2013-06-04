@@ -7,13 +7,18 @@ button,
 input,
 select,
 textarea {
-    color: #222;
+    color: White;
 }
 
 body {
     font-size: 1em;
     line-height: 1.4;
-    background-color: #efefef;
+    background: transparent url(../img/bgw.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
 }
 
 ::-moz-selection {
@@ -85,23 +90,28 @@ body {
    =================== */
 
 .header-container {
-    border-bottom: 20px solid Black;
+    /*border-bottom: 20px solid Black;*/
 }
 
 .footer-container,
 .main aside {
-    border-top: 20px solid Black;
+    border-top: 10px solid Black;
 }
 
 .header-container,
 .footer-container,
-.main aside {
-    background: #444;
+.main aside, .main article {
+    background: rgb(0,0,0);
+    background: rgba(0,0,0,0.45);
 }
 
 .title {
-    font-size: 4em;
+    font-size: 3.1em;
     color: #dd4f24;
+}
+article{
+    padding: 0 5px 0 10px;
+
 }
 
 /* ==============
@@ -122,10 +132,7 @@ nav a {
     text-decoration: none;
     font-weight: bold;
 
-    color: white;
-    background: #22bce0;
-
-    border-radius: 35px;
+    color: White;
 }
 
 nav a:hover,
@@ -147,6 +154,7 @@ nav a:hover {
 
 .main article h1 {
     font-size: 2em;
+
 }
 
 .main aside {
