@@ -1,0 +1,8 @@
+/* nipey webfont (new-bulletproof) */ 
+@font-face {
+    font-family: 'nipey';
+    src: url('../fonts/nipey.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/nipey.woff') format('woff'),
+         url('../fonts/nipey.ttf')  format('truetype'),
+         url('../fonts/nipey.svg#webfont') format('svg');
+}
