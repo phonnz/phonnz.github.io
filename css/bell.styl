@@ -1,0 +1,97 @@
+BACKGROUND = #27ae60
+BELL = #fed274
+
+
+.pane 
+    
+    cursor pointer
+    height 140px
+    margin 50px auto
+    width 150px
+    position relative
+
+.bell
+    height 100%
+    background-color BELL
+    border-radius 100px 100px 0 0
+    position relative
+    width 100%
+
+    &:after
+        content ""
+        // background darken(BELL, 15%)
+        height 10%
+        position absolute
+        bottom 0 
+        left -8%
+        border-radius 20px
+        width 116%
+
+    &:before
+        content ""
+        background darken(BELL, 15%)
+        border-radius 50%
+        height 20%
+        position absolute
+        top -16%
+        left 40%
+        width 20%
+    
+.tail
+    background darken(BELL, 30%)
+    border-radius 100%
+    bottom -12%
+    content ""
+    height 30%
+    left 35%
+    overflow hidden 
+    position absolute
+    width 30%
+    z-index -1
+
+    &:after
+        content ""
+        position absolute
+        background darken(BELL, 40%)
+        height 100%
+        left 50%
+        width 50%
+
+.face
+    background darken(BELL, 30%)
+    bottom 20%
+    border-radius 100%
+    left 38%
+    height 25%
+    position absolute
+    width 25%
+
+    &:before  
+        content ""
+        background BELL  
+        height 40%
+        position absolute
+        width 100%
+
+.left-eye
+.right-eye
+    display block
+    background darken(BELL, 40%)
+    border-radius 100%
+    height 10px
+    position absolute
+    top -12px
+    width 10px
+    z-index 10
+
+.left-eye
+    left -15px
+
+.right-eye
+    right -15px
+    
+
+
+
+
+
