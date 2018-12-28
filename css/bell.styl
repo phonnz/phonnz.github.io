@@ -19,18 +19,19 @@ BELL = #fed274
 
     &:after
         content ""
-        // background darken(BELL, 15%)
+        background darken(BELL, 15%)
         height 10%
         position absolute
-        bottom 0 
+        bottom 0
         left -8%
         border-radius 20px
         width 116%
 
     &:before
         content ""
-        background darken(BELL, 15%)
+        // background darken(BELL, 15%)
         border-radius 50%
+        box-shadow inset 0 0 0 7px darken(BELL, 15%)
         height 20%
         position absolute
         top -16%
@@ -82,15 +83,30 @@ BELL = #fed274
     position absolute
     top -12px
     width 10px
-    z-index 10
+    z-index 10  
 
 .left-eye
     left -15px
 
 .right-eye
     right -15px
-    
 
+// Animations
+@-webkit-keyframes ringing 
+    25%
+        -webkit-transform rotate(5deg)
+    75%
+        -webkit-transform rotate(-5deg)
+
+@-moz-keyframes ringing
+    25%
+        -moz-transform rotate(5deg)
+    75%
+        -moz-transform rotate(-5deg)
+
+.pane:hover
+    -webkit-animation ringing 0.5s infinite
+    -moz-animation ringing 0.5s infinite
 
 
 
