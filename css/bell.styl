@@ -108,6 +108,25 @@ BELL = #fed274
     -webkit-animation ringing 0.5s infinite
     -moz-animation ringing 0.5s infinite
 
+.bell:hover .left-eye
+.bell:hover .right-eye
+    background BELL
+    box-shadow 0 0 0 5px darken(BELL, 40%)
+    height 15px
+    top -5px
+    width 18px
+
+.bell:hover .left-eye:after
+.bell:hover .right-eye:after
+    background BELL
+    content ""
+    height 100%
+    left -50%
+    position absolute
+    top 40%
+    width 300%
+    
+
 
 
 
