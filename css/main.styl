@@ -3,12 +3,9 @@
 BLUE = #010e6a
 WHITE = #fff
 
-body
-	background-attachment fixed
-	background-image linear-gradient(rgba(0, 0, 0, 0.43), rgba(0, 0, 0, 0.43)), url(../img/phonnz-background5.png)
-	background-repeat no-repeat
-	background-size cover
-	color WHITE
+body	
+	background none
+	color BLUE
 	font-family "Fira Sans", Helvetica
 	font-weight normal
 	font-style normal
@@ -41,9 +38,9 @@ a
 	background-color black
 
 .top-padded
-	padding-top 100px
+	padding-top 0px
 
-figure 
+figure
 	img
 		display block
 		width 100%
@@ -84,3 +81,34 @@ ul.social-list
 			height 40px
 			width 100%
 			padding 10px 12px
+
+@media (min-width: 565px)
+	body
+		background-attachment fixed
+		background-image linear-gradient(rgba(0, 0, 0, 0.43), rgba(0, 0, 0, 0.43)), url(../img/phonnz-background5.png)
+		background-position-x -450px 
+		background-size cover
+		color WHITE
+	div#phonnz
+		display none
+	
+	.top-padded
+		padding-top 300px
+
+@media (min-width: 700px)
+	body
+		background-position-x -300px
+
+@media (min-width: 1000px)
+	.top-padded
+		padding-top 100px
+
+@media (min-width: 1450px)
+	body
+		background-position-x -250px
+
+@media (min-width: 1750px)
+	body
+		background-position-x 0px
+		background-repeat no-repeat
+	
